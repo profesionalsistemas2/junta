@@ -1,0 +1,66 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Email</title>
+    <style>
+        header {
+            background-color: #ffffff; /* Azul */
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cid:logo" style="display:block; width:fit-content">
+    </header>
+    <div class="container">
+        <section class="section">
+            <div class="col-lg-12">
+                <div class="card col-8">
+                    <div class="col-12 card-body">
+                        <div style="line-height: 75%;">
+                            <div class="row">
+                                <div class="col-8" style="font-weight: bold;"></div>
+                                <div class="col-4"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2>Hola {{name}},</h2>
+                        <br>
+                        <p>Gerencia CMISL le ha concedido acceso al siguiente <a href="http://localhost:4200">sitio web</a>.</p>
+                        <p>Dicho acceso estará habilitado hasta el día {{fecha}}.</p>
+                        <p>Sus credenciales de acceso son:</p>
+                        <div>
+                            <p><strong>Usuario: </strong>{{email}}</p>
+                            <p><strong>Contraseña: </strong>{{password}}</p>
+                        </div>
+                        <p>Se recomienda cambiar su contraseña cuando ingrese a la plataforma.</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+                <div class="col-xs-8 col-md-10" style="margin:4px;">
+                    <h5 style="font-size:10px;color: #737b7f;">PROTECCIÓN DE DATOS</h5>
+                    <p style="font-size:9px;color: #737b7f;">De conformidad con lo establecido en el Art. 5 de la Ley Orgánica 15/1999 de diciembre de Protección de Datos de Carácter Personal, por el que se regula el derecho de información en la recogida de datos le informamos de los siguientes extremos:</p>
+                    <ul style="font-size:9px;color: #737b7f;">
+                        <li>Los datos de carácter personal que nos ha suministrado en esta y otras comunicaciones mantenidas con usted serán objeto de tratamiento en los ficheros responsabilidad de CLINICA MATERNO INFANTIL SAN LUIS S.A.</li>
+                        <li>La finalidad del tratamiento es la de gestionar de forma adecuada la prestación del servicio que nos ha requerido. Asimismo, estos datos no serán cedidos a terceros, salvo las cesiones legalmente permitidas.</li>
+                        <li>Los datos solicitados a través de esta y otras comunicaciones son de suministro obligatorio para la prestación del servicio. Estos son adecuados, pertinentes y no excesivos.</li>
+                        <li>Su negativa a suministrar los datos solicitados implica la imposibilidad prestarle el servicio.</li>
+                        <li>Asimismo, le informamos de la posibilidad de ejercitar los correspondientes derechos de acceso, rectificación, cancelación y oposición de conformidad con lo establecido en la Ley 15/1999 ante CLINICA MATERNO INFANTIL SAN LUIS S.A. como responsables del fichero. Los derechos mencionados los puede ejercitar a través de los siguientes medios: protección.datos@clinicasanluis.com.co</li>
+                    </ul>
+                    <h5 style="font-size:10px;color: #737b7f;">CONFIDENCIALIDAD</h5>
+                    <p style="font-size:9px;color: #737b7f;">La información que pueda contener este mensaje, así como su(s) archivo(s) adjunto(s) es totalmente confidencial y va dirigida única y exclusivamente a su destinatario. Si usted lee este mensaje y no es el destinatario señalado, o la persona responsable de entregar el mensaje al destinatario, o ha recibido esta comunicación por error, le recordamos que está prohibida, y puede ser ilegal, cualquier divulgación, distribución o reproducción de esta comunicación, y le rogamos que nos lo notifique inmediatamente y nos devuelva el mensaje original a la dirección arriba mencionada. Gracias.
+                    Virus: Se han tomado las medidas pertinentes para asegurar que este mensaje y sus ficheros adjuntos están libres de virus. No obstante, recomendamos encarecidamente que el receptor del mismo proceda igualmente a utilizar los medios necesarios para asegurarse de la inexistencia de virus y/o código malicioso alguno.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
